@@ -875,3 +875,6 @@ class Tensor:
 
     def bitwise_xor(self, other, *, out=None):
         return torch_frontend.bitwise_xor(self._ivy_array, other)
+
+    def logical_and(self, other, *, out=None):
+        return torch_frontend.logical_and(self._ivy_array, other)
